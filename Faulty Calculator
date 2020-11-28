@@ -1,0 +1,26 @@
+# Exercise 2 Faulty Calculator
+# 45 * 3 = 555, 56 + 9 = 77, 56 / 6 = 4
+
+a = int(input("Enter First  Number :"))
+b = int(input("Enter Second Number :"))
+operation = input("Enter operation to perform :")
+
+if operation == '*':
+    if (a == 45) and (b == 3):
+        print("555")
+    else:
+        print(a*b)
+elif operation == '+':
+    if (a == 56) and (b == 9):
+        print("77")
+    else:
+        print(a+b)
+elif operation == '/':
+    if (a == 56) and (b == 6):
+        print("4")
+    else:
+        print(a/b)
+elif operation == '-':
+    print(a-b)
+else:
+    print("Unexpected Input Operstion")
